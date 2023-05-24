@@ -8,21 +8,39 @@
     <title>Singup</title>
 </head>
 <body>
-    <div>
-        <input
-        spellcheck="false"
-        id="password" 
-        type="password"
-        placeholder="password"
-        onkeyup="handleChange()"
+    <div class="login-card">
+        <img
+          src="./assets/img/bsk.jpg"
         />
-        <div id="bars">
+        <h2>Sign Up</h2>
+        <h3>Enter your credentials</h3>
+        <form class="login-form">
+          <div class="username">
+            <input
+              autocomplete="off"
+              spellcheck="false"
+              class="control"
+              type="email"
+              placeholder="Email"
+              value="joe@gmail.com"
+            />
+            <div id="spinner" class="spinner"></div>
+          </div>
+          <input
+            spellcheck="false"
+            class="control"
+            id="password"
+            type="password"
+            placeholder="Password"
+            onkeyup="handleChange()"
+          />
+          <div id="bars">
             <div></div>
-        </div>
-        <div id="strenght"></div>
-    </div>
-
-
-    <script src="script.js"></script>
+          </div>
+          <div class="strength" id="strength"></div>
+          <button class="control" type="button">JOIN NOW</button>
+        </form>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
